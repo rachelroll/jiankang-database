@@ -18,6 +18,8 @@ class CreateMessagesTable extends Migration
 
             $table->string('title')->default('')->comment('消息标题');
             $table->string('content')->default('')->comment('消息正文');
+            $table->integer('user_id')->default(0)->comment('用户ID');
+            $table->tinyInteger('message_type')->default(0)->comment('消息类型(1: 系统 | 2: 活动 | 3: 事件 | 4: 评论 | 5: 点赞 )');
 
             $table->timestamps();
         });

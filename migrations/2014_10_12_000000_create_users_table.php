@@ -22,7 +22,7 @@ class CreateUsersTable extends Migration
 
             $table->string('nickname')->default('')->comment('昵称');
             $table->string('avatar')->default('')->comment('头像');
-            $table->string('role')->default('')->comment('角色 0: 不可发布 | 1: 可发布');
+            $table->string('role')->default('')->comment('角色 0: 普通 | 1: 达人');
             $table->string('gender')->default('')->comment('性别 0: 男 | 1: 女');
             $table->string('phone')->default('')->comment('手机号');
             $table->string('openid')->default('')->comment('openid');

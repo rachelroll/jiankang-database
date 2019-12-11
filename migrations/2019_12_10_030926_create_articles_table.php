@@ -23,6 +23,7 @@ class CreateArticlesTable extends Migration
             $table->bigInteger('views_count')->default(0)->comment('浏览量');
             $table->bigInteger('comments_count')->default(0)->comment('评论量');
             $table->bigInteger('likes_count')->default(0)->comment('点赞量');
+            $table->tinyInteger('type')->default(0)->comment('类型(1: 知识 | 2: 膳食 | 3: 运动 | 4: 秀)');
 
             $table->timestamps();
         });
